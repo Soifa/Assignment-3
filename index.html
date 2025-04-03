@@ -7,7 +7,7 @@
     <!-- FONT EMBED -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kirang+Haerang&family=Kite+One&display=swap" rel="stylesheet">
 
     <style>
       body {
@@ -32,6 +32,58 @@
         max-width: 60%;
       }
 
+      .bio h1 {
+        font-family: "Kirang Haerang", system-ui;
+        font-size: 60px;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: 4px;
+      }
+
+      .bio h1 span:nth-child(1) {
+        color: #9747FF;
+      }
+
+      /* purple */
+      .bio h1 span:nth-child(2) {
+        color: #00A0EC;
+      }
+
+      /* blue */
+      .bio h1 span:nth-child(3) {
+        color: #52B13A;
+      }
+
+      /* green */
+      .bio h1 span:nth-child(4) {
+        color: #D4A2FF;
+      }
+
+      /* lightPurple */
+      .bio h1 span:nth-child(5) {
+        color: #FF4491;
+      }
+
+      /* pastel pink */
+      .bio h1 span:nth-child(6) {
+        color: #00A0EC;
+      }
+
+      /* blue */
+      .bio h1 span:nth-child(7) {
+        color: #FE97AC;
+      }
+
+      /* light pink */
+
+      .bio p {
+        font-family: "Kite One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 1.6;
+        max-width: 600px;
+      }
+
       .photo-wrapper {
         flex: 1;
         max-width: 40%;
@@ -39,10 +91,14 @@
 
       .photo-wrapper img {
         width: 100%;
-        border: 10px solid #00B4FF;
-        border-radius: 50% 40% 50% 40% / 40% 50% 40% 50%;
-        /* fun blob shape */
       }
+
+      .resume-button {
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 60px;
+      }
+
 
       ul {
         list-style-type: none;
@@ -66,8 +122,26 @@
         transition: border-color 0.3s ease;
       }
 
+      .resume-button a {
+        font-family: 'Kite One', sans-serif;
+        font-size: 20px;
+        color: #A020F0;
+        text-decoration: none;
+        padding: 12px 40px;
+        border: 3px solid #D4A2FF;
+        border-radius: 30px;
+        transition: all 0.3s ease;
+        background-color: transparent;
+        display: inline-block;
+      }
+
       li a:hover {
         border-bottom: 4px solid #00A0EC;
+      }
+
+      .resume-button a:hover {
+        background-color: #D4A2FF;
+        color: white;
       }
 
       li a[href="#background"] {
@@ -88,8 +162,34 @@
       </ul>
 
       <div class="container">
-
+        <div class="photo-wrapper">
+          <img src="myPhoto.png" alt="Photo of you">
+        </div>
+        <div class="bio">
+          <h1>
+            <span>S</span><span>o</span><span>f</span><span>i</span><span>a</span> <span>X</span><span>u</span>
+          </h1>
+          <p>
+            As a Global Business and Digital Arts student at the University of Waterloo, I blend a solid foundation in economics and business with a passion for digital design. My academic journey has equipped me with professional proficiency in Adobe Creative Suite—including Illustrator, Photoshop, InDesign, Premiere Pro, and Audition—and has allowed me to create a diverse range of projects such as logos, posters, mock-ups, prototypes, films, documentaries, audio pieces, and magazines.
+          </p>
+        </div>
       </div>
+
+      <div class="container reverse">
+        <div class="bio">
+          <p>
+            I consider myself both imaginative and detail-oriented. I love to let my creativity explore uncharted territories, yet I also strive for perfection in every project, ensuring that even the smallest details are meticulously crafted. My passion for reading fantasy literature has exposed me to countless extraordinary worlds, continually pushing the boundaries of my imagination. Additionally, I find great satisfaction in video editing—assembling clips and refining details to build immersive worlds that transport audiences into compelling stories.
+          </p>
+        </div>
+        <div class="photo-wrapper">
+          <img src="adobe creative cloud.png" alt="Adobe Creative Tools Icons">
+        </div>
+      </div>
+
+      <div class="resume-button">
+        <a href="https://www.canva.com/design/DAGYsb3a900/HzhNEasZmHm42NCZkpET9A/view?utm_content=DAGYsb3a900&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h6c0ee04f51" target="_blank">Resumé</a>
+      </div>
+
     </div>
   </body>
 </html>
