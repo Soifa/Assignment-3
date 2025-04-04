@@ -13,6 +13,7 @@
         background-color: #FFED81;
         margin: 0;
         font-size: 16px;
+        padding-top: 70px;
       }
 
       .webInfo {
@@ -99,12 +100,22 @@
         margin-top: 40px;
         margin-bottom: 60px;
       }
+      
+      .nav-bar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #FFED81;
+        /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+}
 
       ul {
         list-style-type: none;
         overflow: hidden;
         display: flex;
         justify-content: right;
+        margin: 0;
+        padding: 1em 2em;
       }
 
       li {
@@ -154,12 +165,14 @@
 
   <body>
     <div class="webInfo">
+      <div class="nav-bar">
       <ul>
         <li><a href="#background">Background</a></li>
         <li><a href="https://soifa.github.io/interest/">Interest</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#artwork">Artwork</a></li>
       </ul>
+      </div>
 
       <div class="container">
         <div class="photo-wrapper">
